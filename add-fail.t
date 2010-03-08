@@ -6,7 +6,7 @@ use warnings;
 use FindBin qw[$Bin];
 use Test::More tests => 3;
 
-my $git = $ENV{GIT} // 'git';
+my $git = $ENV{GIT} // '/home/avar/git/git';
 
 chdir $Bin;
 system qq[rm -rf file dir];
